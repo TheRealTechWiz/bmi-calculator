@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="25dp"
+        android:text="@string/bmi_calculator"
+        android:textAllCaps="true"
+        android:textColor="#212121"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="@string/your_weight_in_kg"
+        android:textColor="#000"
+
+        />
+    <!--    <EditText-->
+    <!--        android:id="@+id/weight"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginHorizontal="50dp"-->
+    <!--        android:layout_marginVertical="10dp"-->
+    <!--        android:paddingHorizontal="15dp"-->
+    <!--        android:paddingVertical="12dp"-->
+    <!--        android:inputType="numberDecimal"-->
+    <!--        android:background="@drawable/edit_bg"-->
+    <!--        />-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/weight"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:hint="@string/enter_your_weight_kg"
+        android:paddingVertical="12dp"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="@string/your_height_in_cm"
+        android:textColor="#000" />
+    <!--    <EditText-->
+    <!--        android:id="@+id/height"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginHorizontal="50dp"-->
+    <!--        android:layout_marginVertical="10dp"-->
+    <!--        android:paddingHorizontal="15dp"-->
+    <!--        android:paddingVertical="12dp"-->
+    <!--        android:inputType="numberDecimal"-->
+    <!--        android:background="@drawable/edit_bg"-->
+    <!--        />-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/height"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:hint="@string/enter_your_height_cm"
+        android:paddingVertical="12dp"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/calculate"
+        android:textAllCaps="false"
+        android:textColor="#fafafa" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="15dp"
+        android:text="@string/your_bmi"
+        android:textAlignment="center"
+        android:textSize="26sp"
+
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        tools:text="23" />
+    <TextView
+        android:id="@+id/weightResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:textSize="24sp"
+        tools:text="You are overweight" />
+</LinearLayout>

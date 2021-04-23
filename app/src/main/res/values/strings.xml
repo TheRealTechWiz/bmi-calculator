@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="underweight">You are underweight</string>
+    <string name="overweight">You are overweight</string>
+    <string name="normal">Your Weight is normal</string>
+    <string name="your_bmi">Your BMI</string>
+    <string name="enter_your_height_cm">Enter your Height (cm)</string>
+    <string name="calculate">Calculate</string>
+    <string name="your_height_in_cm">Your Height in Cm</string>
+    <string name="enter_your_weight_kg">Enter your Weight (Kg)</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="your_weight_in_kg">Your Weight in Kg</string>
+    <string name="decimal">%.2f</string>
+</resources>
